@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="800" prefWidth="800" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stckhero.HelloController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <AnchorPane prefHeight="825.0" prefWidth="627.0">
+      <children>
+         <ImageView fx:id="titleImageView" fitHeight="800" fitWidth="800" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@background1.png" />
+            </image>
+         </ImageView>
+         <Button layoutX="325.0" layoutY="325.0" maxHeight="202.0" maxWidth="208.0" mnemonicParsing="false" onAction="#onHelloButtonClick" prefHeight="202.0" prefWidth="208.0" style="-fx-background-color: red; -fx-background-radius: 200; -fx-min-width: 150; -fx-min-height: 150; -fx-max-height: 150; -fx-max-width: 150;" text="PLAY" textFill="WHITE">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+         <Text layoutX="200.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STICK">
+            <font>
+               <Font size="150.0" />
+            </font>
+         </Text>
+         <Text layoutX="207.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HERO">
+            <font>
+               <Font size="150.0" />
+            </font>
+         </Text>
+         <Button fx:id="circularButton" layoutX="25.0" layoutY="550.0" mnemonicParsing="false" onAction="#onSoundClick" style="-fx-min-height: 60; -fx-min-width: 60; -fx-max-height: 60; -fx-max-width: 60; -fx-background-radius: 200; -fx-background-color: transparent;" textFill="TRANSPARENT" />
+         <Box cullFace="NONE" depth="100" height="200.0" layoutX="400.0" layoutY="700.0" width="100">
+            <effect>
+               <Blend />
+            </effect>
+         </Box>
+         <ImageView fx:id="stickheroinitial" fitHeight="87.0" fitWidth="100.0" layoutX="356.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@stick_hero_static.png" />
+            </image>
+         </ImageView>
+         <Button fx:id="backgroundSelect" layoutX="25.0" layoutY="663.0" mnemonicParsing="false" onAction="#ongallaryButtonClick" style="-fx-background-color: transparent; -fx-background-radius: 200; -fx-min-height: 60; -fx-min-width: 60; -fx-max-height: 60; -fx-max-width: 60;" />
+         <Button fx:id="help" layoutX="716.0" layoutY="663.0" mnemonicParsing="false" onAction="#onhelpButtonClick" style="-fx-background-color: transparent; -fx-background-radius: 200; -fx-min-height: 60; -fx-min-width: 60; -fx-max-height: 60; -fx-max-width: 60;" />
+         <Button fx:id="Avatarselect" layoutX="716.0" layoutY="550.0" mnemonicParsing="false" onAction="#onAvatarButtonClick" style="-fx-background-color: transparent; -fx-background-radius: 200; -fx-min-height: 60; -fx-min-width: 60; -fx-max-height: 60; -fx-max-width: 60;" />
+      </children>
+   </AnchorPane>
+</VBox>
